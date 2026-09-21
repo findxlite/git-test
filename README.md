@@ -7,3 +7,4 @@
 - 分支与合并、解决冲突
 - 时光机：git show / git restore
 - 连接 GitHub 远程仓库并 push
+- 练习 git push 和 git pull
