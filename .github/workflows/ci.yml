@@ -1,4 +1,4 @@
-name: my first workflow
+name: ci
 
 on: [push]
 
@@ -6,8 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: say hello
-        run: |
-          echo "hello from GitHub Actions!"
-          uname -a
-          whoami
+      - name: checkout code
+        uses: actions/checkout@v4
+      - name: build docker image
+        run: docker build -t myapp .
