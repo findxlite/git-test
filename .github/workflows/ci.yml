@@ -1,0 +1,13 @@
+name: my first workflow
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: say hello
+        run: |
+          echo "hello from GitHub Actions!"
+          uname -a
+          whoami
